@@ -1,6 +1,7 @@
 .nav{
   grid-area: n;
   background-color: rgb(41, 35, 35);
+  padding: 20px;
 }
 
 a{
@@ -9,4 +10,8 @@ a{
 }
 .item{
   color: red;
+}
+
+.active{
+  color: aliceblue;
 }

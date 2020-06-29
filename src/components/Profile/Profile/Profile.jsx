@@ -3,7 +3,7 @@ import ss from './Profile.module.css';
 import MyPosts from "../MyPosts/MyPosts";
 
 const Profile = () => {
-    return <div className={ss.content}>
+    return <div>
       <div>
       <img className={ss.forest} src="https://images.pexels.com/photos/4827/nature-forest-trees-fog.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"/>
       </div>
