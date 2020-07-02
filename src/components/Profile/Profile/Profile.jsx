@@ -1,18 +1,14 @@
 import React from 'react';
 import ss from './Profile.module.css';
 import MyPosts from "../MyPosts/MyPosts";
+import ProfileInfo from "./ProfileInfo/ProfileInfo";
 
 const Profile = () => {
     return <div>
-      <div>
-      <img className={ss.forest} src="https://images.pexels.com/photos/4827/nature-forest-trees-fog.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"/>
-      </div>
+        <ProfileInfo/>
 
-      <div>
-        ava+description
-      </div>
-      <MyPosts />
-  </div>
+        <MyPosts/>
+    </div>
 }
 
 

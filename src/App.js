@@ -7,7 +7,7 @@ import {BrowserRouter, Route} from "react-router-dom";
 import Music from "./components/Music/Music";
 import News from "./components/News/News";
 import Settings from "./components/Settings/Settings";
-import Messages from "./components/Dialogs/Messages";
+import Messages from "./components/Messages/Messages";
 
 const App = () => {
     return (
@@ -18,7 +18,7 @@ const App = () => {
                 <Navbar/>
                 <div class='app-wrapper-content'>
                     <Route path='/profile' component={Profile}/>
-                    <Route path='/dialogs' component={Messages}/>
+                    <Route exact path='/messages' component={Messages}/>
                     <Route path='/news' component={News}/>
                     <Route path='/music' component={Music}/>
                     <Route path='/settings' component={Settings}/>
