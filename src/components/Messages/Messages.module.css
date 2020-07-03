@@ -1,28 +1,5 @@
-.ss messages:last-child{
-    padding-bottom: 150px;
-}
 .dialogs {
     display: grid;
     grid-template-rows: 60px 1fr;
     grid-template-columns: 2fr 10fr;
-}
-
-.dialogsItems {
-    padding: 10px;
-}
-
-.dialogsItems {
-    padding: 10px;
-}
-
-.messages{
-    padding: 10px;
-}
-
-.message {
-
-}
-
-.active{
-    color: red;
 }
