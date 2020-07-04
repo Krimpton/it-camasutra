@@ -2,12 +2,7 @@ import React from 'react';
 import ss from './MyPosts.module.css';
 import Post from "../Post/Post";
 
-const MyPosts = () => {
-
-    let PostsData = [
-        {id: 0, sms: 'Hi, hello', likeCount: 0},
-        {id: 1, sms: 'Wow, Git!', likeCount: 1},
-    ];
+const MyPosts = (PostsData) => {
 
     let posts = PostsData.map(p => <Post message={p.sms} likeCount={p.likeCount}/>);
 
