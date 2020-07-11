@@ -9,26 +9,22 @@ import News from "./components/News/News";
 import Settings from "./components/Settings/Settings";
 import Messages from "./components/Messages/Messages";
 
-const App = () => {
+const App = (props) => {
     return (
         <BrowserRouter>
             <div className="app-wrapper">
                 <Header/>
-
                 <Navbar/>
                 <div class='app-wrapper-content'>
-                    <Route path='/profile' render={() => <Profile/>}/>
-                    <Route exact path='/messages' render={() => <Messages/>}/>
-                    <Route path='/news' component={News}/>
-                    <Route path='/music' component={Music}/>
-                    <Route path='/settings' component={Settings}/>
+                    <Route path='/profile' render={() => <Profile state={props.state.profilePage}/>}/>
+                    <Route path='/messages' render={() => <Messages state={props.state.messagesPage}/>}/>
+                    <Route path='/news' render={() => <News/>}/>
+                    <Route path='/music' render={() => <Music/>}/>
+                    <Route path='/settings' render={() => <Settings/>}/>
                 </div>
             </div>
-        </BrowserRouter>
-    );
-
+        </BrowserRouter>);
 
 }
-
 
 export default App;

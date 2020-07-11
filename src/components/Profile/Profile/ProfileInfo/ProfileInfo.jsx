@@ -5,7 +5,7 @@ const ProfileInfo = () => {
     return (
         <div>
             <div className={ss.forestImg}>
-                <img src="https://images.pexels.com/photos/4827/nature-forest-trees-fog.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=150&w=440"/>
+                <img src="https://images.pexels.com/photos/4827/nature-forest-trees-fog.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=950&w=240"/>
             </div>
 
         <div className={ss.descriptionBlock}>

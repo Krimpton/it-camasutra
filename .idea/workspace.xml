@@ -2,12 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="485c25c8-3d19-4342-bdc9-b57cc73bcd7f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Messages/DialogItem/DialogItem.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Messages/Dialogs/MessagesSms.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Redux/state.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Messages/DialogItem/DialogItem.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Messages/Dialogs/MessagesSms.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Messages/Messages.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Messages/Messages.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navbar/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/Navbar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/News/News.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/News/News.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/Post/Post.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Post/Post.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/Post/Post.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Post/Post.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/Profile/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Profile/Profile.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/Profile/ProfileInfo/ProfileInfo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Profile/ProfileInfo/ProfileInfo.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/Profile/ProfileInfo/ProfileInfo.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Profile/ProfileInfo/ProfileInfo.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -60,11 +69,11 @@
       <recent name="C:\Users\hesoy\React\it-camasutra\src\components\Messages\DialogItem" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\hesoy\React\it-camasutra\src\components\Profile\Profile\ProfileInfo" />
-      <recent name="C:\Users\hesoy\React\it-camasutra\src\components" />
+      <recent name="C:\Users\hesoy\React\it-camasutra\src\components\Messages" />
+      <recent name="C:\Users\hesoy\React\it-camasutra\src\components\Messages\DialogItem" />
+      <recent name="C:\Users\hesoy\React\it-camasutra\src\components\Messages\Dialogs" />
+      <recent name="C:\Users\hesoy\React\it-camasutra\src\components\Profile\Profile" />
       <recent name="C:\Users\hesoy\React\it-camasutra\src" />
-      <recent name="C:\Users\hesoy\React\it-camasutra\src\Profile\MyPosts" />
-      <recent name="C:\Users\hesoy\React\it-camasutra\src\Profile" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -106,6 +115,17 @@
       <workItem from="1593863622804" duration="1759000" />
       <workItem from="1593874374781" duration="1458000" />
       <workItem from="1593883717296" duration="5474000" />
+      <workItem from="1593980531842" duration="2414000" />
+      <workItem from="1594023084426" duration="3769000" />
+      <workItem from="1594113354267" duration="19462000" />
+      <workItem from="1594194611207" duration="14115000" />
+      <workItem from="1594280608503" duration="3861000" />
+      <workItem from="1594320250318" duration="1041000" />
+      <workItem from="1594325448481" duration="623000" />
+      <workItem from="1594378089303" duration="6616000" />
+      <workItem from="1594406718270" duration="4398000" />
+      <workItem from="1594453270835" duration="1524000" />
+      <workItem from="1594467960782" duration="1000000" />
     </task>
     <servers />
   </component>
@@ -211,6 +231,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="235" y="0" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1593203141868" />
+    <state x="92" y="92" width="1736" height="856" key="dock-window-1" timestamp="1594401723532">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="dock-window-1/0.0.1920.1040@0.0.1920.1040" timestamp="1594401723532" />
+    <state x="92" y="92" width="1736" height="856" key="dock-window-2" timestamp="1594401723532">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="dock-window-2/0.0.1920.1040@0.0.1920.1040" timestamp="1594401723532" />
+    <state x="92" y="92" width="1736" height="856" key="dock-window-3" timestamp="1594401723532">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="dock-window-3/0.0.1920.1040@0.0.1920.1040" timestamp="1594401723532" />
+    <state x="92" y="92" width="1736" height="856" key="dock-window-4" timestamp="1594401723532">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="dock-window-4/0.0.1920.1040@0.0.1920.1040" timestamp="1594401723532" />
     <state x="593" y="2" width="733" height="1035" key="find.popup" timestamp="1593602327381">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

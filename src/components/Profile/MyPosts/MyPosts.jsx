@@ -2,11 +2,11 @@ import React from 'react';
 import ss from './MyPosts.module.css';
 import Post from "../Post/Post";
 
-const MyPosts = (PostsData) => {
+const MyPosts = (props) => {
 
-    let posts = PostsData.map(p => <Post message={p.sms} likeCount={p.likeCount}/>);
+    let posts = props.postsData.map(p => <Post sms={p.sms} likeCount={p.likeCount}/>);
 
-    return <div className={ss.postsBlock}>
+    return (<div className={ss.postsBlock}>
         <div>My posts</div>
         <div>
             <textarea></textarea>
@@ -14,10 +14,10 @@ const MyPosts = (PostsData) => {
         <div>
             <button>Add post</button>
         </div>
-        <div className={ss.posts}>
+        <div className={ss.postsData}>
             {posts}
         </div>
-    </div>
+    </div>)
 }
 
 
