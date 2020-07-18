@@ -1,0 +1,22 @@
+.icon{
+    width: 30px;
+    height: 30px;
+    background-color: #ffff00;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.icons{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.names{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.active{
+    color: #455ac2;
+}

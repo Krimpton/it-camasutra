@@ -1,0 +1,12 @@
+.friends{
+    display: flex;
+    padding-top: 5px;
+}
+
+.id{
+    padding-left: 5%;
+}
+
+.name{
+    padding-left: 20%;
+}

@@ -2,21 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="485c25c8-3d19-4342-bdc9-b57cc73bcd7f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Redux/state.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Messages/DialogItem/DialogItem.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Messages/Dialogs/MessagesSms.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/FastFriends/FastFriends.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Profile/Profile.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Sidebar/FriendsList/FriendsList.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Sidebar/FriendsList/FriendsList.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/render.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/state.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/state.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Messages/Dialogs/MessagesSms.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Messages/Dialogs/MessagesSms.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Messages/Messages.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Messages/Messages.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Messages/Messages.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Messages/Messages.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Navbar/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/Navbar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/News/News.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/News/News.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navbar/Navbar.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/Navbar.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Profile/Post/Post.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Post/Post.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Profile/Post/Post.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Post/Post.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile/Profile/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Profile/Profile.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile/Profile/ProfileInfo/ProfileInfo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Profile/ProfileInfo/ProfileInfo.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile/Profile/ProfileInfo/ProfileInfo.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Profile/ProfileInfo/ProfileInfo.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/Profile/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/Profile/Profile.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FastFriends/FastFriends.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/Profile/ProfileInfo/ProfileInfo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/Profile/ProfileInfo/ProfileInfo.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,8 +60,9 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Messages/Dialogs" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -62,18 +72,20 @@
     <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.1.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\hesoy\React\it-camasutra\src\components\Messages\Dialogs" />
-      <recent name="C:\Users\hesoy\React\it-camasutra\src\components\Messages\DialogItem" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\hesoy\React\it-camasutra\src\components\Profile" />
+      <recent name="C:\Users\hesoy\React\it-camasutra\src\components\Profile\MyPosts" />
       <recent name="C:\Users\hesoy\React\it-camasutra\src\components\Messages" />
       <recent name="C:\Users\hesoy\React\it-camasutra\src\components\Messages\DialogItem" />
       <recent name="C:\Users\hesoy\React\it-camasutra\src\components\Messages\Dialogs" />
-      <recent name="C:\Users\hesoy\React\it-camasutra\src\components\Profile\Profile" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\hesoy\React\it-camasutra\src" />
+      <recent name="C:\Users\hesoy\React\it-camasutra\src\components\Messages\Dialogs" />
+      <recent name="C:\Users\hesoy\React\it-camasutra\src\components\Messages\DialogItem" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -125,7 +137,16 @@
       <workItem from="1594378089303" duration="6616000" />
       <workItem from="1594406718270" duration="4398000" />
       <workItem from="1594453270835" duration="1524000" />
-      <workItem from="1594467960782" duration="1000000" />
+      <workItem from="1594467960782" duration="1962000" />
+      <workItem from="1594471347671" duration="11302000" />
+      <workItem from="1594544454002" duration="1558000" />
+      <workItem from="1594624458910" duration="14018000" />
+      <workItem from="1594714221096" duration="9397000" />
+      <workItem from="1594798559024" duration="6251000" />
+      <workItem from="1594883962937" duration="4936000" />
+      <workItem from="1594888956129" duration="4398000" />
+      <workItem from="1594971050395" duration="19612000" />
+      <workItem from="1595059096973" duration="438000" />
     </task>
     <servers />
   </component>
@@ -137,10 +158,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="378" y="414" key="#ESLint/0.0.1920.1040@0.0.1920.1040" timestamp="1593432253576" />
-    <state x="658" y="98" key="#Inspections" timestamp="1593448293719">
+    <state x="658" y="98" key="#Inspections" timestamp="1594661967511">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="658" y="98" key="#Inspections/0.0.1920.1040@0.0.1920.1040" timestamp="1593448293719" />
+    <state x="658" y="98" key="#Inspections/0.0.1920.1040@0.0.1920.1040" timestamp="1594661967511" />
+    <state x="816" y="321" key="#Notifications" timestamp="1594734573945">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="816" y="321" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1594734573945" />
     <state x="410" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1593203162500">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

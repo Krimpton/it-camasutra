@@ -8,8 +8,8 @@ a{
   text-decoration: none;
   color: rgba(240, 255, 255, 0.623);
 }
-.item{
-  color: red;
+.itemLast{
+  padding-top: 130px;
 }
 
 .active{
