@@ -3,9 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="485c25c8-3d19-4342-bdc9-b57cc73bcd7f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Redux/state.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/state.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Messages/Messages.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Messages/Messages.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/render.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +44,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="js.last.introduce.type" value="CONST" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -51,7 +55,7 @@
     <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
-    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.1.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.1.4\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -126,7 +130,18 @@
       <workItem from="1594888956129" duration="4398000" />
       <workItem from="1594971050395" duration="19612000" />
       <workItem from="1595059096973" duration="9158000" />
-      <workItem from="1595107057112" duration="1628000" />
+      <workItem from="1595107057112" duration="2316000" />
+      <workItem from="1595142435908" duration="2811000" />
+      <workItem from="1595247229614" duration="12661000" />
+      <workItem from="1595279264391" duration="1142000" />
+      <workItem from="1595316287816" duration="2000" />
+      <workItem from="1595316452891" duration="1244000" />
+      <workItem from="1595339755219" duration="218000" />
+      <workItem from="1595340141467" duration="11000" />
+      <workItem from="1595340181611" duration="138000" />
+      <workItem from="1595340627350" duration="7703000" />
+      <workItem from="1595410510464" duration="10287000" />
+      <workItem from="1595489742215" duration="3275000" />
     </task>
     <servers />
   </component>
@@ -256,9 +271,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="593" y="2" width="733" height="1035" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1593602327381" />
-    <state x="756" y="431" key="run.anything.popup" timestamp="1593184216457">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="425" y="779" key="run.anything.popup" timestamp="1595259685947">
+      <screen x="0" y="0" width="1080" height="1880" />
     </state>
+    <state x="425" y="779" key="run.anything.popup/0.0.1080.1880@0.0.1080.1880" timestamp="1595259685947" />
     <state x="756" y="431" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1593184216457" />
     <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup" timestamp="1593430908784">
       <screen x="0" y="0" width="1920" height="1040" />

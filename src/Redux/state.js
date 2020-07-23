@@ -1,3 +1,11 @@
+const ADD_POST = 'ADD-POST';
+const UPDATE_NEW_POST_TEXT = 'UPDATE-NEW-POST-TEXT';
+
+
+const ADD_MESSAGE = 'ADD-MESSAGE';
+const UPDATE_NEW_MESSAGE_TEXT = 'UPDATE-NEW-MESSAGE-TEXT';
+// использование констант, чтобы снизить шанс ошибки, при написании имени переменной
+
 let store = {
     _state: {
         profilePage: {
@@ -5,7 +13,7 @@ let store = {
                 {id: 0, sms: 'Hi, hello', likeCount: 0},
                 {id: 1, sms: 'Wow, Git!', likeCount: 1},
             ],
-            newPostText: ''
+            newPostText: '',
 
 
         },
@@ -28,7 +36,7 @@ let store = {
                 {id: 6, sms: 'Just do it!!'},
                 {id: 7, sms: 'come to mee again'},
             ],
-            newMessageText: '666111'
+            newMessageText: '666111',
         },
 
 
@@ -44,52 +52,61 @@ let store = {
             ],
         }
     },
-    getState(){
-        return this._state;
-    },
-    _callSubscriber(){
+    _callSubscriber() {
         console.log('state has changed');
     },
-    addPost() {
-        const newPost = {
-            id: 5,
-            sms: this._state.profilePage.newPostText,
-            likeCount: 0
-        };
-        // Пушит данные из textArea в конец масива из state
-        this._state.profilePage.postsData.push(newPost);
-        // Зануление textArea
-        this._state.profilePage.newPostText = '';
-        this._callSubscriber(this._state);
-    },
-    updateNewPostText(newText){
-        this._state.profilePage.newPostText = newText;
-        this._callSubscriber(this._state);
-    },
-    addMessage() {
-        const newMes = {
-            id: 0,
-            sms: this._state.messagesPage.newMessageText
-        };
-        // Пушит данные из textArea в конец масива из state
-        this._state.messagesPage.messageInfo.push(newMes);
-        // Зануление textArea
-        this._state.messagesPage.newMessageText = '';
-        this._callSubscriber(this._state);
-    },
-    updateNewMessageText(newMessage){
-        this._state.messagesPage.newMessageText = newMessage;
-        this._callSubscriber(this._state);
+
+    getState() {
+        return this._state;
     },
     subscribe(observer) {
         this._callSubscriber = observer;
-    }
+    },
     // методы
+
+    dispatch(action) { // type: 'ADD-POST'}
+        // экшин это какой то обьект(действие), который мы диспатчим
+        if (action.type === 'ADD_POST') {
+            let newPost = {
+                id: 5,
+                sms: this._state.profilePage.newPostText,
+                likeCount: 0
+            };
+            // Пушит данные из textArea в конец масива из state
+            this._state.profilePage.postsData.push(newPost);
+            // Зануление textArea
+            this._state.profilePage.newPostText = '';
+            this._callSubscriber(this._state);
+        } else if (action.type === 'UPDATE_NEW_POST_TEXT') {
+            this._state.profilePage.newPostText = action.newText;
+            this._callSubscriber(this._state);
+        } else if (action.type === 'ADD_MESSAGE') {
+            let newMessage = this._state.messagesPage.newMessageText;
+            this._state.messagesPage.newMessageText = ''; // Зануление textArea
+            this._state.messagesPage.messageInfo.push({id: 8, sms: newMessage}); // Пушит данные из textArea в конец масива из state
+            this._callSubscriber(this._state);
+        } else if (action.type === 'UPDATE_NEW_MESSAGE_TEXT') {
+            this._state.messagesPage.newMessageText = action.newMessage;
+            this._callSubscriber(this._state); // сообщает внешнему миру об изменении state
+        }
+    }
 }
 
+// export const sendMessageActionCreator = () => ({type: 'SEND_MESSAGE'});
+// export const updateNewMessageText = () => ({type: });
+
+
+export const addPostActionCreator = () => ({type: 'ADD_POST'});
+// нет тела функции, т.к она только возвращает addPost и больше ничего не делает
+// actionCreator функция, которая возвращает обьект action
+
+export const updateNewPostText = (text) => ({type: 'UPDATE_NEW_POST_TEXT', newText: text});
+
+
+export const addMessageActionCreator = () => ({type: 'ADD_MESSAGE'});
+
+export const updateNewMessageText = (message) => ({type: 'UPDATE_NEW_MESSAGE_TEXT', newMessage: message});
 
 window.store = store;
-// делает state глобальным для чтения
-
-
+// делает store глобальным для чтения
 export default store;

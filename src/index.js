@@ -10,18 +10,13 @@ let rerenderEntireTree = (state) => {
     ReactDOM.render(
         <BrowserRouter>
             <App state={state}
-                 // бинд метода стор да бы сохранить владельца метода
-                 addPost={store.addPost.bind(store)}
-                 updateNewPostText={store.updateNewPostText.bind(store)}
-                 updateNewMessageText={store.updateNewMessageText.bind(store)}
-                 addMessage={store.addMessage.bind(store)}/>
+                 dispatch={store.dispatch.bind(store)} store={store}/>{/*бинд метода стор да бы сохранить владельца метода*/}
         </BrowserRouter>, document.getElementById('root'));
 }
 rerenderEntireTree(store.getState());
 
 
 store.subscribe(rerenderEntireTree);
-
 
 
 serviceWorker.unregister();
