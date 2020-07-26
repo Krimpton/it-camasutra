@@ -1,6 +1,6 @@
 import React from "react";
 import ss from './Sidebar.module.css';
-import state from "../../Redux/state";
+import state from "../../Redux/store";
 import FriendsList from "./FriendsList/FriendsList";
 
 const Sidebar = (props) => {

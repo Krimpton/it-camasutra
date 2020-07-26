@@ -2,13 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="485c25c8-3d19-4342-bdc9-b57cc73bcd7f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Redux/messagesReducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Redux/profileReducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Redux/redux-store.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Redux/sidebarReducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Redux/store.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/state.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/state.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/state.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Messages/Messages.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Messages/Messages.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Sidebar/FriendsList/FriendsList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/FriendsList/FriendsList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +40,9 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectId" id="1dp0xhZaRuyVhKrUT4EjlTzDpYw" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -45,7 +54,7 @@
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.last.introduce.type" value="CONST" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Redux" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -58,17 +67,18 @@
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.1.4\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\hesoy\React\it-camasutra\src\Redux" />
+      <recent name="C:\Users\hesoy\React\it-camasutra\src" />
+      <recent name="C:\Users\hesoy\React\it-camasutra\src\components\Messages\Dialogs" />
+      <recent name="C:\Users\hesoy\React\it-camasutra\src\components\Messages\DialogItem" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\hesoy\React\it-camasutra\src\components\Profile" />
       <recent name="C:\Users\hesoy\React\it-camasutra\src\components\Profile\MyPosts" />
       <recent name="C:\Users\hesoy\React\it-camasutra\src\components\Messages" />
       <recent name="C:\Users\hesoy\React\it-camasutra\src\components\Messages\DialogItem" />
       <recent name="C:\Users\hesoy\React\it-camasutra\src\components\Messages\Dialogs" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\hesoy\React\it-camasutra\src" />
-      <recent name="C:\Users\hesoy\React\it-camasutra\src\components\Messages\Dialogs" />
-      <recent name="C:\Users\hesoy\React\it-camasutra\src\components\Messages\DialogItem" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -141,7 +151,12 @@
       <workItem from="1595340181611" duration="138000" />
       <workItem from="1595340627350" duration="7703000" />
       <workItem from="1595410510464" duration="10287000" />
-      <workItem from="1595489742215" duration="3275000" />
+      <workItem from="1595489742215" duration="3928000" />
+      <workItem from="1595502840027" duration="1217000" />
+      <workItem from="1595665486372" duration="6830000" />
+      <workItem from="1595747803550" duration="6398000" />
+      <workItem from="1595788215366" duration="606000" />
+      <workItem from="1595800285747" duration="8000" />
     </task>
     <servers />
   </component>
@@ -165,9 +180,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="410" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593203162500" />
-    <state x="690" y="304" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1593646885755">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="388" y="550" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1595678041470">
+      <screen x="0" y="0" width="1080" height="1880" />
     </state>
+    <state x="388" y="550" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1080.1880@0.0.1080.1880" timestamp="1595678041470" />
     <state x="690" y="304" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1593646885755" />
     <state x="730" y="316" key="#com.intellij.fileTypes.FileTypeChooser/62.0.1858.1080@62.0.1858.1080" timestamp="1593275816246" />
     <state x="613" y="221" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1595060710671">

@@ -1,6 +1,6 @@
 import React from "react";
 import ss from './FriendsList.module.css';
-import state from "../../../Redux/state";
+import state from "../../../Redux/store";
 
 const FriendsList = (props) => {
     return(
