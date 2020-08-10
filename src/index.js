@@ -10,13 +10,14 @@ let rerenderEntireTree = (state) => {
     ReactDOM.render(
         <BrowserRouter>
             <App state={state}
-                 dispatch={store.dispatch.bind(store)} store={store}/>{/*бинд метода стор да бы сохранить владельца метода*/}
+                 dispatch={store.dispatch.bind(store)}
+                 store={store}/>{/*бинд метода стор да бы сохранить владельца метода*/}
         </BrowserRouter>, document.getElementById('root'));
 }
 rerenderEntireTree(store.getState());
 
 
-store.subscribe( () => {
+store.subscribe(() => {
     let state = store.getState();
     rerenderEntireTree(state);
 });

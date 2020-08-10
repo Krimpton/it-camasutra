@@ -2,20 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="485c25c8-3d19-4342-bdc9-b57cc73bcd7f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Redux/messagesReducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Redux/profileReducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Redux/redux-store.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Redux/sidebarReducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Redux/store.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Messages/MessagesConstainer.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPostsContainer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/state.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Messages/Messages.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Messages/Messages.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Sidebar/FriendsList/FriendsList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/FriendsList/FriendsList.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +50,7 @@
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.last.introduce.type" value="CONST" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Redux" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Messages" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -68,10 +64,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\hesoy\React\it-camasutra\src\components\Messages" />
+      <recent name="C:\Users\hesoy\React\it-camasutra\src\components\Profile\MyPosts" />
       <recent name="C:\Users\hesoy\React\it-camasutra\src\Redux" />
       <recent name="C:\Users\hesoy\React\it-camasutra\src" />
       <recent name="C:\Users\hesoy\React\it-camasutra\src\components\Messages\Dialogs" />
-      <recent name="C:\Users\hesoy\React\it-camasutra\src\components\Messages\DialogItem" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\hesoy\React\it-camasutra\src\components\Profile" />
@@ -81,6 +78,7 @@
       <recent name="C:\Users\hesoy\React\it-camasutra\src\components\Messages\Dialogs" />
     </key>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="project-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration>C:\Users\hesoy\AppData\Roaming\Subversion</configuration>
   </component>
@@ -157,11 +155,32 @@
       <workItem from="1595747803550" duration="6398000" />
       <workItem from="1595788215366" duration="606000" />
       <workItem from="1595800285747" duration="8000" />
+      <workItem from="1595800307536" duration="69000" />
+      <workItem from="1595836884988" duration="3057000" />
+      <workItem from="1595873843872" duration="2693000" />
+      <workItem from="1595967228539" duration="15000" />
+      <workItem from="1595967423319" duration="913000" />
+      <workItem from="1596030729675" duration="875000" />
+      <workItem from="1596036841288" duration="688000" />
+      <workItem from="1596038649403" duration="2115000" />
+      <workItem from="1596105921757" duration="7356000" />
+      <workItem from="1596212555528" duration="34000" />
+      <workItem from="1596443113741" duration="2598000" />
+      <workItem from="1596656307230" duration="53000" />
+      <workItem from="1596784237469" duration="1908000" />
+      <workItem from="1596809577756" duration="271000" />
+      <workItem from="1596812558358" duration="26000" />
+      <workItem from="1596824968596" duration="794000" />
+      <workItem from="1596897781756" duration="2881000" />
+      <workItem from="1596923558314" duration="856000" />
+      <workItem from="1596964043255" duration="613000" />
+      <workItem from="1597005479340" duration="4078000" />
+      <workItem from="1597072784336" duration="6657000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
     <state x="378" y="414" key="#ESLint" timestamp="1593432253576">
@@ -287,11 +306,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="593" y="2" width="733" height="1035" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1593602327381" />
-    <state x="425" y="779" key="run.anything.popup" timestamp="1595259685947">
-      <screen x="0" y="0" width="1080" height="1880" />
+    <state x="756" y="431" key="run.anything.popup" timestamp="1597007869853">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="425" y="779" key="run.anything.popup/0.0.1080.1880@0.0.1080.1880" timestamp="1595259685947" />
-    <state x="756" y="431" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1593184216457" />
+    <state x="756" y="431" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1597007869853" />
     <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup" timestamp="1593430908784">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
