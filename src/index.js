@@ -5,13 +5,14 @@ import './index.css';
 import App from './App';
 import {BrowserRouter} from "react-router-dom";
 import store from "./Redux/redux-store";
+import StoreContext from "./StoreContext";
 
 let rerenderEntireTree = (state) => {
     ReactDOM.render(
         <BrowserRouter>
-            <App state={state}
-                 dispatch={store.dispatch.bind(store)}
-                 store={store}/>{/*бинд метода стор да бы сохранить владельца метода*/}
+            <StoreContext.Provider value={store}>
+                <App/>
+            </StoreContext.Provider>
         </BrowserRouter>, document.getElementById('root'));
 }
 rerenderEntireTree(store.getState());
