@@ -25,21 +25,20 @@ let initialState = {
 };
 
 const messagesReducer = (state = initialState, action) => {
-
-    let stateCopyNew = {...state};
-
     switch (action.type) {
         case 'ADD_MESSAGE':
-            let newMessage = stateCopyNew.newMessageText;
-        {
-            stateCopyNew.newMessageText = ''; // Зануление textArea
-            stateCopyNew.messageInfo.push({id: 8, sms: newMessage}); // Пушит данные из textArea в конец масива из state
-            return stateCopyNew;
-        }
+            let newMessage = state.newMessageText;
+            return {
+                ...state,
+                newMessage: action.newMessageText,
+                newMessageText: '', // Зануление textArea
+                messageInfo: [...state.messageInfo, {id: 8, sms: newMessage}] // Пушит данные из textArea в конец масива из state
+            };
         case 'UPDATE_NEW_MESSAGE_TEXT':
-            let stateCopy = {...state};
-            stateCopy.newMessageText = action.newMessage; // сообщает внешнему миру об изменении state
-            return stateCopy;
+            return {
+                ...state,
+                newMessageText: action.newMessage, // сообщает внешнему миру об изменении state
+            };
         default:
             return state;
     }
