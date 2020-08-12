@@ -8,8 +8,8 @@ const Messages = (props) => {
 
     let state = props.messagesPage;
 
-    let dialog = state.messageData.map(d => <DialogItem name={d.name} id={d.id}/>);
-    let messages = state.messageInfo.map(m => <MessageSms sms={m.sms}/>);
+    let dialog = state.messageData.map(d => <DialogItem name={d.name} id={d.id} key={d.id}/>);
+    let messages = state.messageInfo.map(m => <MessageSms sms={m.sms} key={m.id}/>);
     let newMessageText = state.newMessageText;
 
     let sendMes = () => {

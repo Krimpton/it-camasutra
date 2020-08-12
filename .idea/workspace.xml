@@ -2,13 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="485c25c8-3d19-4342-bdc9-b57cc73bcd7f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/StoreContext.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/messagesReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/messagesReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/profileReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/profileReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StoreContext.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Messages/Messages.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Messages/Messages.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Messages/MessagesConstainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Messages/MessagesConstainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPostsContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPostsContainer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,7 +178,8 @@
       <workItem from="1597005479340" duration="4078000" />
       <workItem from="1597072784336" duration="10768000" />
       <workItem from="1597144705565" duration="4254000" />
-      <workItem from="1597151696493" duration="285000" />
+      <workItem from="1597151696493" duration="6331000" />
+      <workItem from="1597247249153" duration="6159000" />
     </task>
     <servers />
   </component>
@@ -204,10 +209,10 @@
     <state x="388" y="550" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1080.1880@0.0.1080.1880" timestamp="1595678041470" />
     <state x="690" y="304" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1593646885755" />
     <state x="730" y="316" key="#com.intellij.fileTypes.FileTypeChooser/62.0.1858.1080@62.0.1858.1080" timestamp="1593275816246" />
-    <state x="613" y="221" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1595060710671">
+    <state x="613" y="221" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1597154627099">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="613" y="221" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1595060710671" />
+    <state x="613" y="221" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597154627099" />
     <state x="655" y="230" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/62.0.1858.1080@62.0.1858.1080" timestamp="1593275679820" />
     <state x="977" y="0" key="CommitChangelistDialog2" timestamp="1593274680243">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -305,11 +310,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="593" y="2" width="733" height="1035" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1593602327381" />
-    <state x="756" y="431" key="run.anything.popup" timestamp="1597007869853">
+    <state x="756" y="431" key="run.anything.popup" timestamp="1597160403935">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="425" y="779" key="run.anything.popup/0.0.1080.1880@0.0.1080.1880" timestamp="1595259685947" />
-    <state x="756" y="431" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1597007869853" />
+    <state x="756" y="431" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1597160403935" />
     <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup" timestamp="1593430908784">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

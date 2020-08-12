@@ -4,7 +4,7 @@ import Post from "../Post/Post";
 
 const MyPosts = (props) => {
 
-    let posts = props.postsData.map(p => <Post sms={p.sms} likeCount={p.likeCount}/>);
+    let posts = props.postsData.map(p => <Post sms={p.sms} likeCount={p.likeCount} key={p.id}/>);
 
     let newPostElement = React.createRef();  // создание ссылки
 

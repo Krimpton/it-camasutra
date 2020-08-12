@@ -3,11 +3,11 @@ const UPDATE_NEW_POST_TEXT = 'UPDATE-NEW-POST-TEXT';
 // использование констант, чтобы снизить шанс ошибки, при написании имени переменной
 
 let initialState = {
-        postsData: [
-            {id: 0, sms: 'Hi, hello', likeCount: 0},
-            {id: 1, sms: 'Wow, Git!', likeCount: 1},
-        ],
-        newPostText: '',
+    postsData: [
+        {id: 0, sms: 'Hi, hello', likeCount: 0},
+        {id: 1, sms: 'Wow, Git!', likeCount: 1},
+    ],
+    newPostText: '',
 };
 
 const profileReducer = (state = initialState, action) => {
@@ -18,12 +18,16 @@ const profileReducer = (state = initialState, action) => {
                 sms: state.newPostText,
                 likeCount: 0
             };
-            state.postsData.push(newPost); // Пушит данные из textArea в конец масива из state
-            state.newPostText = ''; // Зануление textArea
-            return state;
-        case 'UPDATE_NEW_POST_TEXT':
-            state.newPostText = action.newText;
-            return state;
+            let stateCopy = {...state}; // делаем копию обьекта
+            stateCopy.posts = [...state.postsData]; // копия массива
+            stateCopy.postsData.push(newPost); // Пушит данные из textArea в конец масива из state
+            stateCopy.newPostText = ''; // Зануление textArea
+            return stateCopy;
+        case 'UPDATE_NEW_POST_TEXT': {
+            let stateCopy = {...state};
+            stateCopy.newPostText = action.newText;
+            return stateCopy;
+    }
         default:
             return state;
     }
