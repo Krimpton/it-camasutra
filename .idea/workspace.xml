@@ -2,9 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="485c25c8-3d19-4342-bdc9-b57cc73bcd7f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Redux/usersReducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Sidebar/FriendsList/SidebarContainer.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Users/User.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Users/Users.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Users/Users.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Users/UsersContainer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/messagesReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/messagesReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/profileReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/profileReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/redux-store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/redux-store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/sidebarReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/sidebarReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Sidebar/FriendsList/FriendsList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/FriendsList/FriendsList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +53,7 @@
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.last.introduce.type" value="CONST" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Messages" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Users" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -56,19 +66,19 @@
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.1.4\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\hesoy\React\it-camasutra\src\components\Messages" />
-      <recent name="C:\Users\hesoy\React\it-camasutra\src\components\Profile\MyPosts" />
-      <recent name="C:\Users\hesoy\React\it-camasutra\src\Redux" />
-      <recent name="C:\Users\hesoy\React\it-camasutra\src" />
-      <recent name="C:\Users\hesoy\React\it-camasutra\src\components\Messages\Dialogs" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\hesoy\React\it-camasutra\src\components\Profile" />
       <recent name="C:\Users\hesoy\React\it-camasutra\src\components\Profile\MyPosts" />
       <recent name="C:\Users\hesoy\React\it-camasutra\src\components\Messages" />
       <recent name="C:\Users\hesoy\React\it-camasutra\src\components\Messages\DialogItem" />
       <recent name="C:\Users\hesoy\React\it-camasutra\src\components\Messages\Dialogs" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\hesoy\React\it-camasutra\src\components\Users" />
+      <recent name="C:\Users\hesoy\React\it-camasutra\src\Redux" />
+      <recent name="C:\Users\hesoy\React\it-camasutra\src\components\Sidebar\FriendsList" />
+      <recent name="C:\Users\hesoy\React\it-camasutra\src\components\Messages" />
+      <recent name="C:\Users\hesoy\React\it-camasutra\src\components\Profile\MyPosts" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="project-level" UseSingleDictionary="true" transferred="true" />
@@ -171,7 +181,9 @@
       <workItem from="1597072784336" duration="10768000" />
       <workItem from="1597144705565" duration="4254000" />
       <workItem from="1597151696493" duration="6331000" />
-      <workItem from="1597247249153" duration="8912000" />
+      <workItem from="1597247249153" duration="9030000" />
+      <workItem from="1597306400032" duration="17971000" />
+      <workItem from="1597350624919" duration="1240000" />
     </task>
     <servers />
   </component>

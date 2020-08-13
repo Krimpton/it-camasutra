@@ -4,7 +4,9 @@ import FriendsList from "./FriendsList/FriendsList";
 
 const Sidebar = (props) => {
 
-    let list = props.state.sidebar.map(l => <FriendsList id={l.id} name={l.name}/>);
+    let state = props.sidebarPage;
+
+    let list = state.sidebar.map(l => <FriendsList id={l.id} name={l.name} key={l.id}/>);
 
     return (<div className={ss.list}>
         <div className={ss.listLocal}>

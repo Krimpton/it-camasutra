@@ -9,6 +9,7 @@ const FriendsList = (props) => {
             </div>
             <div className={ss.name}>
                 {props.name}
+                {props.icon}
             </div>
         </div>
     );

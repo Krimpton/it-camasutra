@@ -6,10 +6,10 @@ import Profile from "./components/Profile/Profile";
 import Music from "./components/Music/Music";
 import News from "./components/News/News";
 import Settings from "./components/Settings/Settings";
-import Messages from "./components/Messages/Messages";
-import Sidebar from "./components/Sidebar/Sidebar";
 import {BrowserRouter, Route} from "react-router-dom";
 import MessagesContainer from "./components/Messages/MessagesConstainer";
+import SidebarContainer from "./components/Sidebar/FriendsList/SidebarContainer";
+import UsersContainer from "./components/Users/UsersContainer";
 
 const App = (props) => {
     return (
@@ -20,10 +20,11 @@ const App = (props) => {
                 <Route path='/profile' render={() => <Profile/>}/>
 
                 <Route path='/messages' render={() => <MessagesContainer/>}/>
+                <Route path='/users' render={() => <UsersContainer/>}/>
                 <Route path='/news' render={() => <News/>}/>
                 <Route path='/music' render={() => <Music/>}/>
                 <Route path='/settings' render={() => <Settings/>}/>
-                <Route path='/sidebar' render={() => <Sidebar/>}/>
+                <Route path='/sidebar' render={() => <SidebarContainer/>}/>
             </div>
         </div>);
 
