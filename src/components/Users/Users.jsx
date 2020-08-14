@@ -1,50 +1,24 @@
 import React from "react";
 import ss from './User.module.css';
+import * as axios from "axios";
+import userPhoto from '../../assets/images/nextpng.com.png';
 
 let Users = (props) => {
-    if (props.users.length === 0) {
-        props.setUsers([
-                {
-                    id: 0,
-                    photoUrl: 'https://s3.cointelegraph.com/storage/uploads/view/5302e7d54c7acf0308c1effc3a63072a.png',
-                    followed: false,
-                    fullName: 'Dmitry',
-                    status: 'So good day',
-                    location: {city: 'Minsk', country: 'Belarus'}
-                },
-                {
-                    id: 1,
-                    photoUrl: 'https://s3.cointelegraph.com/storage/uploads/view/5302e7d54c7acf0308c1effc3a63072a.png',
-                    followed: false,
-                    fullName: 'Michail',
-                    status: 'The best choice',
-                    location: {city: 'Ukraine', country: 'Kiev'}
-                },
-                {
-                    id: 2,
-                    photoUrl: 'https://s3.cointelegraph.com/storage/uploads/view/5302e7d54c7acf0308c1effc3a63072a.png',
-                    followed: true,
-                    fullName: 'Ivan',
-                    status: 'How are you?',
-                    location: {city: 'Moskow', country: 'Russia'}
-                },
-                {
-                    id: 3,
-                    photoUrl: 'https://s3.cointelegraph.com/storage/uploads/view/5302e7d54c7acf0308c1effc3a63072a.png',
-                    followed: false,
-                    fullName: 'Ostap',
-                    status: 'Hello everyone',
-                    location: {city: 'Ukraine', country: 'Lviv'}
-                },
-            ]
-        );
+    let getUsers = () => {
+        if (props.users.length === 0) {
+
+            axios.get("https://social-network.samuraijs.com/api/1.0/users").then(response => {
+                props.setUsers(response.data.items);
+            });
+        }
     }
     return <div>
+        <button onClick={getUsers}>return</button>
         {
             props.users.map(u => <div key={u.id}>
             <span>
                 <div>
-                    <img src={u.photoUrl}/>
+                    <img src={u.photos.small != null ? u.photos.small : userPhoto}/>
                 </div>
                 <div>
                     {u.followed ?
@@ -60,12 +34,12 @@ let Users = (props) => {
             </span>
                 <span>
                 <span>
-                    <div>{u.fullName}</div>
+                    <div>{u.name}</div>
                     <div>{u.status}</div>
                 </span>
                 <span>
-                    <div>{u.location.country}</div>
-                    <div>{u.location.city}</div>
+                    <div>{"u.location.country"}</div>
+                    <div>{"u.location.city"}</div>
                 </span>
             </span>
             </div>)
