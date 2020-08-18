@@ -2,10 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="485c25c8-3d19-4342-bdc9-b57cc73bcd7f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Redux/authReducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/Spinner.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Common/Preloader/Preloader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Header/HeaderContainer.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Profile/ProfileContainer.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ProfileDescription/ProfileDescription.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ProfileDescription/ProfileDescription.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ProfileDescription/ProfileDescriptionContainer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/profileReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/profileReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/redux-store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/redux-store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/usersReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/usersReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Messages/MessagesConstainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Messages/MessagesConstainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navbar/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/Navbar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPostsContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPostsContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Users/User.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/User.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Users/Users.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/Users.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Users/UsersContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/UsersContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,8 +35,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -38,13 +58,14 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.last.introduce.type" value="CONST" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Users" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Header" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -65,11 +86,11 @@
       <recent name="C:\Users\hesoy\React\it-camasutra\src\components\Messages\Dialogs" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\hesoy\React\it-camasutra\src\components\Users" />
+      <recent name="C:\Users\hesoy\React\it-camasutra\src\components\Header" />
       <recent name="C:\Users\hesoy\React\it-camasutra\src\Redux" />
-      <recent name="C:\Users\hesoy\React\it-camasutra\src\components\Sidebar\FriendsList" />
-      <recent name="C:\Users\hesoy\React\it-camasutra\src\components\Messages" />
-      <recent name="C:\Users\hesoy\React\it-camasutra\src\components\Profile\MyPosts" />
+      <recent name="C:\Users\hesoy\React\it-camasutra\src\components\ProfileDescription" />
+      <recent name="C:\Users\hesoy\React\it-camasutra\src\components\Profile" />
+      <recent name="C:\Users\hesoy\React\it-camasutra\src\components\Users" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="project-level" UseSingleDictionary="true" transferred="true" />
@@ -175,12 +196,25 @@
       <workItem from="1597247249153" duration="9030000" />
       <workItem from="1597306400032" duration="17971000" />
       <workItem from="1597350624919" duration="1240000" />
-      <workItem from="1597399067742" duration="3342000" />
+      <workItem from="1597399067742" duration="5300000" />
+      <workItem from="1597438445578" duration="1891000" />
+      <workItem from="1597479573682" duration="17777000" />
+      <workItem from="1597599824010" duration="3335000" />
+      <workItem from="1597606030140" duration="6163000" />
+      <workItem from="1597657507384" duration="3406000" />
+      <workItem from="1597680944694" duration="1652000" />
+      <workItem from="1597746485126" duration="9104000" />
+      <workItem from="1597765024085" duration="1534000" />
+      <workItem from="1597769450480" duration="141000" />
+      <workItem from="1597770888211" duration="1510000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="378" y="414" key="#ESLint" timestamp="1593432253576">
@@ -205,10 +239,10 @@
     <state x="388" y="550" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1080.1880@0.0.1080.1880" timestamp="1595678041470" />
     <state x="690" y="304" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1593646885755" />
     <state x="730" y="316" key="#com.intellij.fileTypes.FileTypeChooser/62.0.1858.1080@62.0.1858.1080" timestamp="1593275816246" />
-    <state x="613" y="221" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1597154627099">
+    <state x="613" y="221" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1597420221882">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="613" y="221" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597154627099" />
+    <state x="613" y="221" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597420221882" />
     <state x="655" y="230" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/62.0.1858.1080@62.0.1858.1080" timestamp="1593275679820" />
     <state x="977" y="0" key="CommitChangelistDialog2" timestamp="1593274680243">
       <screen x="0" y="0" width="1920" height="1040" />

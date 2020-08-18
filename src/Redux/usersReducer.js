@@ -1,42 +1,16 @@
 const FOLLOW = 'FOLLOW';
 const UNFOLLOW = 'UNFOLLOW';
 const SET_USERS = 'SET_USERS';
+const SET_CURRENT_PAGE = 'SET_CURRENT_PAGE';
+const SET_TOTAL_USERS_COUNT = 'SET_TOTAL_USERS_COUNT';
+const TOGGLE_IS_FETCHING = 'TOGGLE_IS_FETCHING';
 
 let initialState = {
-    users: [
-        // {
-        //     id: 0,
-        //     photoUrl: 'https://s3.cointelegraph.com/storage/uploads/view/5302e7d54c7acf0308c1effc3a63072a.png',
-        //     followed: false,
-        //     fullName: 'Dmitry',
-        //     status: 'So good day',
-        //     location: {city: 'Minsk', country: 'Belarus'}
-        // },
-        // {
-        //     id: 1,
-        //     photoUrl: 'https://s3.cointelegraph.com/storage/uploads/view/5302e7d54c7acf0308c1effc3a63072a.png',
-        //     followed: false,
-        //     fullName: 'Michail',
-        //     status: 'The best choice',
-        //     location: {city: 'Ukraine', country: 'Kiev'}
-        // },
-        // {
-        //     id: 2,
-        //     photoUrl: 'https://s3.cointelegraph.com/storage/uploads/view/5302e7d54c7acf0308c1effc3a63072a.png',
-        //     followed: true,
-        //     fullName: 'Ivan',
-        //     status: 'How are you?',
-        //     location: {city: 'Moskow', country: 'Russia'}
-        // },
-        // {
-        //     id: 3,
-        //     photoUrl: 'https://s3.cointelegraph.com/storage/uploads/view/5302e7d54c7acf0308c1effc3a63072a.png',
-        //     followed: false,
-        //     fullName: 'Ostap',
-        //     status: 'Hello everyone',
-        //     location: {city: 'Ukraine', country: 'Lviv'}
-        // },
-    ],
+    users: [],
+    pageSize: 100,
+    totalUsersCount: 0,
+    currentPage: 1,
+    isFetching: true
 };
 
 const usersReducer = (state = initialState, action) => {
@@ -62,15 +36,28 @@ const usersReducer = (state = initialState, action) => {
                 })
             }
         case SET_USERS: {
-            return {...state, users: [...state.users, ...action.users]}
+            return {...state, users: action.users}
+        }
+        case SET_CURRENT_PAGE: {
+            return {...state, currentPage: action.currentPage}
+        }
+        case SET_TOTAL_USERS_COUNT: {
+            return {...state, totalUsersCount: action.count}
+        }
+        case TOGGLE_IS_FETCHING: {
+            return {...state, isFetching: action.isFetching}
         }
         default:
             return state;
     }
 }
 
-export const followAC = (userId) => ({type: FOLLOW, userId});
-export const unfollowAC = (userId) => ({type: UNFOLLOW, userId});
-export const setUsersAc = (users) => ({type: SET_USERS, users});
+export const follow = (userId) => ({type: FOLLOW, userId});
+export const unfollow = (userId) => ({type: UNFOLLOW, userId});
+export const setUsers = (users) => ({type: SET_USERS, users});
+export const setCurrentPage = (currentPage) => ({type: SET_CURRENT_PAGE, currentPage});
+export const setUsersTotalCount = (totalUsersCount) => ({type: SET_TOTAL_USERS_COUNT, count: totalUsersCount});
+export const setIsfFetching = (isFetching) => ({type: TOGGLE_IS_FETCHING, isFetching});
+
 
 export default usersReducer;

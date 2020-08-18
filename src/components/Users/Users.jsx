@@ -1,29 +1,37 @@
 import React from "react";
-import ss from './User.module.css';
-import * as axios from "axios";
-import userPhoto from '../../assets/images/nextpng.com.png';
+import ss from "./User.module.css";
+import userPhoto from "../../assets/images/nextpng.com.png";
+import {NavLink} from "react-router-dom";
 
 let Users = (props) => {
-    let getUsers = () => {
-        if (props.users.length === 0) {
 
-            axios.get("https://social-network.samuraijs.com/api/1.0/users").then(response => {
-                props.setUsers(response.data.items);
-            });
-        }
+    let pagesCount = Math.ceil(props.totalUsersCount / props.pageSize); //округление в большую сторону
+
+    let pages = [];
+    for (let i = 1; i <= pagesCount; i++) {
+        pages.push(i);
     }
+
     return <div>
-        <button onClick={getUsers}>return</button>
+        <div>
+            {pages.map(p => {
+                return <span className={props.currentPage === p && ss.bold}
+                             onClick={(e) => {
+                                 props.onPageChanged(p);
+                             }}>{p}</span>
+            })}</div>
         {
             props.users.map(u => <div key={u.id}>
             <span>
                 <div>
+                    <NavLink to={'/profile' + u.id}>
                     <img src={u.photos.small != null ? u.photos.small : userPhoto}/>
+                    </NavLink>
                 </div>
                 <div>
                     {u.followed ?
                         <button onClick={() => {
-                            props.unfollow(u.id)
+                            props.unfollow(u.id) // props теперь свойства обьекта = this
                         }}>Unfollow</button>
                         :
                         <button onClick={() => {
