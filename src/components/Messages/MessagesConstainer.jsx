@@ -2,10 +2,13 @@ import React from "react";
 import {addMessageActionCreator, updateNewMessageText} from "../../Redux/messagesReducer";
 import Messages from "./Messages";
 import {connect} from "react-redux";
+import {BrowserRouter as Router, Route} from 'react-router-dom'
+import {withAuthRedirect} from "../../hoc/withAuthRedirect";
+import {compose} from "redux";
 
 let mapStateToProps = (state) => {
     return {
-        messagesPage: state.messagesPage
+        messagesPage: state.messagesPage,
     }
 }
 let mapDispatchToProps = (dispatch) => {
@@ -19,6 +22,9 @@ let mapDispatchToProps = (dispatch) => {
     }
 }
 
-const MessagesContainer = connect(mapStateToProps, mapDispatchToProps)(Messages);
 
-export default MessagesContainer;
+export default compose(
+    connect(mapStateToProps, mapDispatchToProps),
+    (withAuthRedirect)
+)(Messages);
+

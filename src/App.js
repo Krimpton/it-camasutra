@@ -10,6 +10,7 @@ import SidebarContainer from "./components/Sidebar/FriendsList/SidebarContainer"
 import UsersContainer from "./components/Users/UsersContainer";
 import ProfileContainer from "./components/Profile/ProfileContainer";
 import HeaderContainer from "./components/Header/HeaderContainer";
+import Login from "./components/Login/Login";
 
 const App = () => {
     return (
@@ -25,6 +26,7 @@ const App = () => {
                 <Route path='/music' render={() => <Music/>}/>
                 <Route path='/settings' render={() => <Settings/>}/>
                 <Route path='/sidebar' render={() => <SidebarContainer/>}/>
+                <Route path='/login' render={() => <Login/>}/>
             </div>
         </div>);
 
