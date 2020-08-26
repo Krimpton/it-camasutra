@@ -1,37 +1,39 @@
 import React from 'react';
 import ss from './MyPosts.module.css';
 import Post from "../Post/Post";
+import {Field, reduxForm} from "redux-form";
+import {maxLengthCreator, required} from "../../../utils/validators/validator";
+import {textArea} from "../../Common/FormsControls/FormsControls";
 
 const MyPosts = (props) => {
 
     let posts = props.postsData.map(p => <Post sms={p.sms} likeCount={p.likeCount} key={p.id}/>);
 
-    let newPostElement = React.createRef();  // создание ссылки
-
-    let addPost = () => {
-        props.addPost(); // после откработки callback функциит, срабатывает функция, которая пришли из props
+    let addPost = (values) => {
+        props.addPost(values.newPostTextArea);
     }
 
-    let onPostChange = () => {
-        let text = newPostElement.current.value;  // взяли значение из textArea
-        props.onPostChange(text);
-    }
-
-    return (<div className={ss.postsBlock}>
-        <div>My posts</div>
-        <div>
-            <textarea onChange={onPostChange}
-                      ref={newPostElement}
-                      value={props.newPostText}/>
-        </div>
-        <div>
-            <button onClick={addPost}>Add post</button>{/*при изменении addPost передается локальная callback функция onPostChange*/}
-        </div>
+    return (
         <div className={ss.postsData}>
             {posts}
-        </div>
-    </div>);
+            <AddPostDataRF onSubmit={addPost}/>
+        </div>)
 }
+
+const maxLength10 = maxLengthCreator(10);
+
+const MyPostFormRedux = (props) => {
+    return <div className={ss.postsBlock}>
+        <h3>My Posts</h3>
+        <form onSubmit={props.handleSubmit}>
+            <Field component={textArea} name="newPostTextArea" placeholder="Enter your message"
+                   validate={[required, maxLength10]}/>
+            <button>Add post</button>
+        </form>
+    </div>
+}
+
+const AddPostDataRF = reduxForm({form: "postAddRF"})(MyPostFormRedux);
 
 
 export default MyPosts;

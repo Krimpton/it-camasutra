@@ -1,23 +1,19 @@
 import React from "react";
-import {addMessageActionCreator, updateNewMessageText} from "../../Redux/messagesReducer";
+import {addMessageActionCreator} from "../../Redux/messagesReducer";
 import Messages from "./Messages";
 import {connect} from "react-redux";
-import {BrowserRouter as Router, Route} from 'react-router-dom'
 import {withAuthRedirect} from "../../hoc/withAuthRedirect";
 import {compose} from "redux";
 
 let mapStateToProps = (state) => {
     return {
-        messagesPage: state.messagesPage,
+        messagesPage: state.messagesPage
     }
 }
 let mapDispatchToProps = (dispatch) => {
     return {
-        sendMes: () => {
-            dispatch(addMessageActionCreator());
-        },
-        onMessageChange: (message) => {
-            dispatch(updateNewMessageText(message));
+        sendMes: (newMessageBody) => {
+            dispatch(addMessageActionCreator(newMessageBody));
         }
     }
 }

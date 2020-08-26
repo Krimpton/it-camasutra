@@ -9,7 +9,7 @@ let store = {
                 {id: 0, sms: 'Hi, hello', likeCount: 0},
                 {id: 1, sms: 'Wow, Git!', likeCount: 1},
             ],
-            newPostText: '',
+            newPostTextSms: '',
 
 
         },
