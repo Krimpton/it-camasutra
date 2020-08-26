@@ -9,8 +9,9 @@ const Header = (props) => {
              src="https://upload-icon.s3.us-east-2.amazonaws.com/uploads/icons/png/16058550031557996972-512.png"/>
 
         <div className={ss.loginBlock}>
-            {props.isAuth ? props.login :
-                <NavLink to={'/login'}>Login</NavLink>}
+            {props.isAuth
+                ? <div>{props.login} - <button onClick={props.logout}>Log out</button></div>
+                : <NavLink to={'/login'}>Login</NavLink>}
         </div>
     </header>
 }
