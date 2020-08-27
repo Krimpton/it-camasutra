@@ -73,12 +73,13 @@ export const setIsfFetching = (isFetching) => ({type: TOGGLE_IS_FETCHING, isFetc
 export const setFollowingProgress = (isFetching, userId) => ({type: TOGGLE_IS_FOLLOWING_PROGRESS, isFetching, userId});
 
 
-export const getUsers = (currentPage, pageSize) => {
+export const requestUsers = (page, pageSize) => {
 
     return (dispatch) => {
         dispatch(setIsfFetching(true)); // показываем крутилку
+        dispatch(setCurrentPage(page));
 
-        usersApi.getUsers(currentPage, pageSize).then(data => { //запрос на сервак
+        usersApi.getUsers(page, pageSize).then(data => { //запрос на сервак
             dispatch(setIsfFetching(false)); // закончиил показывать крутилку
             dispatch(setUsers(data.items));
             dispatch(setUsersTotalCount(data.totalCount));
