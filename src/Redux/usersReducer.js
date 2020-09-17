@@ -1,4 +1,5 @@
 import {usersApi} from "../api/api";
+import {updateObjectInArray} from "../utils/object-helpers";
 
 const FOLLOW = 'FOLLOW';
 const UNFOLLOW = 'UNFOLLOW';
@@ -22,22 +23,12 @@ const usersReducer = (state = initialState, action) => {
         case FOLLOW:
             return {
                 ...state,
-                users: state.users.map(u => {
-                    if (u.id === action.userId) {
-                        return {...u, followed: true}
-                    }
-                    return u;
-                })
+                users: updateObjectInArray(state.users, action.userId, "id", {followed: true})
             }
         case UNFOLLOW:
             return {
                 ...state,
-                users: state.users.map(u => {
-                    if (u.id === action.userId) {
-                        return {...u, followed: false}
-                    }
-                    return u;
-                })
+                users: updateObjectInArray(state.users, action.userId, "id", {followed: true})
             }
         case SET_USERS: {
             return {...state, users: action.users}
@@ -56,7 +47,7 @@ const usersReducer = (state = initialState, action) => {
                 ...state, followingIsProgress: action.isFetching ?
                     [...state.followingIsProgress, action.userId]
                     :
-                    [state.followingIsProgress.filer(id => id !== action.userId)]
+                    [state.followingIsProgress.filter(id => id !== action.userId)]
             }
         }
         default:
@@ -75,40 +66,35 @@ export const setFollowingProgress = (isFetching, userId) => ({type: TOGGLE_IS_FO
 
 export const requestUsers = (page, pageSize) => {
 
-    return (dispatch) => {
+    return async (dispatch) => {
         dispatch(setIsfFetching(true)); // показываем крутилку
         dispatch(setCurrentPage(page));
 
-        usersApi.getUsers(page, pageSize).then(data => { //запрос на сервак
-            dispatch(setIsfFetching(false)); // закончиил показывать крутилку
-            dispatch(setUsers(data.items));
-            dispatch(setUsersTotalCount(data.totalCount));
-        });
+        let data = await usersApi.getUsers(page, pageSize);
+        dispatch(setIsfFetching(false)); // закончиил показывать крутилку
+        dispatch(setUsers(data.items));
+        dispatch(setUsersTotalCount(data.totalCount));
     }
+}
+
+const followUnfollowFlow = async (dispatch, userId, apiMethod, actionCreator) => {
+    dispatch(setIsfFetching(true, userId));
+    let response = await apiMethod(userId);
+
+    if (response.data.resultCode === 0) {
+        dispatch(actionCreator(userId));
+    }
+    dispatch(setFollowingProgress(false, userId));
 }
 
 export const follow = (userId) => {
-
-    return (dispatch) => {
-        dispatch(setIsfFetching(true, userId));
-        usersApi.follow(userId).then(response => { //запрос на сервак
-            if (response.data.resultCode === 0) {
-                dispatch(followSuccess(userId));
-            }
-            dispatch(setFollowingProgress(false, userId));
-        });
+    return async (dispatch) => {
+        followUnfollowFlow(dispatch, userId, usersApi.follow.bind(usersApi), followSuccess)
     }
 }
 export const unfollow = (userId) => {
-
-    return (dispatch) => {
-        dispatch(setIsfFetching(true, userId));
-        usersApi.unfollow(userId).then(response => { //запрос на сервак
-            if (response.data.resultCode === 0) {
-                dispatch(unfollowSuccess(userId));
-            }
-            dispatch(setFollowingProgress(false, userId));
-        });
+    return async (dispatch) => {
+        followUnfollowFlow(dispatch, userId, usersApi.follow.bind(usersApi), unfollowSuccess)
     }
 }
 export default usersReducer;
