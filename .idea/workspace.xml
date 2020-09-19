@@ -1,25 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="485c25c8-3d19-4342-bdc9-b57cc73bcd7f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Redux/profileReducer.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Paginator/Paginator.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Paginator/Paginator.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileStatusWithHooks.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Users/User.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/object-helpers.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileStatus.test.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hoc/withSuspens.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/authReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/authReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/profileReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/profileReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/redux-store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/redux-store.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/usersReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/usersReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Common/FormsControls/FormsControls.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Common/FormsControls/FormsControls.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Login/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login/Login.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Users/Users.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/Users.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Users/UsersContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/UsersContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/profileReducer.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/profileReducer.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Paginator/Paginator.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Paginator/Paginator.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileStatus.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileStatus.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,8 +70,10 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="javascript.nodejs.core.library.configured.version" value="14.4.0" />
+    <property name="javascript.nodejs.core.library.typings.version" value="14.11.1" />
     <property name="js.last.introduce.type" value="CONST" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Users" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/hoc" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -69,17 +83,17 @@
     <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/react-scripts" />
     <property name="nodejs_package_manager_path" value="yarn" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="settings.nodejs" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.1.4\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\hesoy\React\it-camasutra\src\hoc" />
+      <recent name="C:\Users\hesoy\React\it-camasutra\src\components\Profile\ProfileInfo" />
       <recent name="C:\Users\hesoy\React\it-camasutra\src\components\Users" />
       <recent name="C:\Users\hesoy\React\it-camasutra\src\components\Paginator" />
       <recent name="C:\Users\hesoy\React\it-camasutra\src\Redux" />
-      <recent name="C:\Users\hesoy\React\it-camasutra\src\components\Profile\ProfileInfo" />
-      <recent name="C:\Users\hesoy\React\it-camasutra\src\components\Common\FormsControls" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\hesoy\React\it-camasutra\src\components\Paginator" />
@@ -89,7 +103,20 @@
       <recent name="C:\Users\hesoy\React\it-camasutra\src\components\Messages\DialogItem" />
     </key>
   </component>
-  <component name="RunManager" selected="Jest.after deleting length of messages should be decrement">
+  <component name="RunManager" selected="Jest.Profile Status Component">
+    <configuration name="Profile Status Component" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileStatus.test.jsx" />
+      <test-names>
+        <test-name value="Profile Status Component" />
+      </test-names>
+      <method v="2" />
+    </configuration>
     <configuration name="after deleting length of messages should be decrement" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -129,11 +156,26 @@
       </test-names>
       <method v="2" />
     </configuration>
+    <configuration name="renders without crashing" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/App.test.js" />
+      <test-names>
+        <test-name value="renders without crashing" />
+      </test-names>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Jest.after deleting length of messages should be decrement" />
-        <item itemvalue="Jest.length of posts should be incremented" />
+        <item itemvalue="Jest.Profile Status Component" />
+        <item itemvalue="Jest.renders without crashing" />
         <item itemvalue="Jest.message of new post should be correct" />
+        <item itemvalue="Jest.length of posts should be incremented" />
+        <item itemvalue="Jest.after deleting length of messages should be decrement" />
       </list>
     </recent_temporary>
   </component>
@@ -282,12 +324,28 @@
       <workItem from="1600103500439" duration="4662000" />
       <workItem from="1600253539844" duration="1257000" />
       <workItem from="1600341926058" duration="8474000" />
-      <workItem from="1600361105100" duration="1439000" />
+      <workItem from="1600361105100" duration="2168000" />
+      <workItem from="1600425519159" duration="1439000" />
+      <workItem from="1600430595588" duration="26000" />
+      <workItem from="1600430636091" duration="8224000" />
+      <workItem from="1600524509408" duration="3439000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -305,10 +363,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="816" y="321" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1594734573945" />
-    <state x="410" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1593203162500">
+    <state x="7" y="62" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1600446637592">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="410" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593203162500" />
+    <state x="7" y="62" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600446637592" />
     <state x="690" y="304" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1598378331512">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -332,22 +390,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="687" y="202" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1593698683700" />
-    <state width="1896" height="279" key="GridCell.Tab.0.bottom" timestamp="1600107508783">
+    <state width="1896" height="279" key="GridCell.Tab.0.bottom" timestamp="1600449182330">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1896" height="279" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1600107508783" />
-    <state width="1896" height="279" key="GridCell.Tab.0.center" timestamp="1600107508783">
+    <state width="1896" height="279" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1600449182330" />
+    <state width="1896" height="279" key="GridCell.Tab.0.center" timestamp="1600449182330">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1896" height="279" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1600107508783" />
-    <state width="1896" height="279" key="GridCell.Tab.0.left" timestamp="1600107508783">
+    <state width="1896" height="279" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1600449182330" />
+    <state width="1896" height="279" key="GridCell.Tab.0.left" timestamp="1600449182330">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1896" height="279" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1600107508783" />
-    <state width="1896" height="279" key="GridCell.Tab.0.right" timestamp="1600107508783">
+    <state width="1896" height="279" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1600449182330" />
+    <state width="1896" height="279" key="GridCell.Tab.0.right" timestamp="1600449182330">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1896" height="279" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1600107508783" />
+    <state width="1896" height="279" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1600449182330" />
     <state width="1896" height="327" key="GridCell.Tab.1.bottom" timestamp="1600107499987">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -396,10 +454,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1896" height="327" key="GridCell.Tab.3.right/0.0.1920.1040@0.0.1920.1040" timestamp="1600107499989" />
-    <state x="235" y="0" key="SettingsEditor" timestamp="1600350795816">
+    <state x="88" y="157" key="SettingsEditor" timestamp="1600527030810">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="235" y="0" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1600350795816" />
+    <state x="88" y="157" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1600527030810" />
     <state x="92" y="92" width="1736" height="856" key="dock-window-1" timestamp="1594401723532">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -429,10 +487,10 @@
     </state>
     <state x="425" y="779" key="run.anything.popup/0.0.1080.1880@0.0.1080.1880" timestamp="1595259685947" />
     <state x="756" y="431" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1597160403935" />
-    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup" timestamp="1600362134037">
+    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup" timestamp="1600448275314">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1600362134037" />
+    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1600448275314" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/it_camasutra$after_deleting_length_of_messages_should_be_decrement.info" NAME="after deleting length of messages should be decrement Coverage Results" MODIFIED="1600107304970" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

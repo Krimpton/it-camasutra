@@ -8,7 +8,7 @@ let state = { //данные state
     ],
 };
 
-test('length of posts should be incremented', () => {
+it('length of posts should be incremented', () => {
     //1. test data
     let action = addPostActionCreator("hello-rust!")
 
