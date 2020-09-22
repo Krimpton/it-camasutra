@@ -35,8 +35,22 @@ export const profileApi = {
     },
     updateStatus(status) {
         return instance.put(`profile/status`, {status: status}); // отправ на сервак статус
+    },
+    savePhoto(photoFile) {
+        const formData = new FormData();
+        formData.append("image", photoFile)
+        return instance.put(`profile/photo`, formData, {
+            'Content-Type': 'multipart/form-data'
+        }); // отправ на сервак статус
+    },
+
+    saveProfile(profile) {
+        return instance.put(`profile`, profile); // отправ на сервак статус
+
     }
 }
+
+
 
 export const authApi = {
     me() {

@@ -25,7 +25,7 @@ let User = ({user, followingIsProgress, unfollow, follow}) => {
                             Follow</button>}
                 </div>
             </span>
-                <span>
+        <span>
                 <span>
                     <div>{user.name}</div>
                     <div>{user.status}</div>
@@ -35,7 +35,7 @@ let User = ({user, followingIsProgress, unfollow, follow}) => {
                     <div>{"user.location.city"}</div>
                 </span>
             </span>
-            </div>
-        }
+    </div>
+}
 
 export default User;
