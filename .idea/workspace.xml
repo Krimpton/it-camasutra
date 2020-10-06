@@ -21,9 +21,10 @@
   <component name="ChangeListManager">
     <list default="true" id="485c25c8-3d19-4342-bdc9-b57cc73bcd7f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/authReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/authReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/appReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/appReducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/api/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Login/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login/Login.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileStatus.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileStatus.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -163,11 +164,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Jest.Profile Status Component" />
         <item itemvalue="Jest.renders without crashing" />
         <item itemvalue="Jest.message of new post should be correct" />
         <item itemvalue="Jest.length of posts should be incremented" />
         <item itemvalue="Jest.after deleting length of messages should be decrement" />
+        <item itemvalue="Jest.Profile Status Component" />
       </list>
     </recent_temporary>
   </component>
@@ -325,6 +326,14 @@
       <workItem from="1600603641833" duration="11729000" />
       <workItem from="1600692075921" duration="8998000" />
       <workItem from="1600800246964" duration="5693000" />
+      <workItem from="1600894142696" duration="4559000" />
+      <workItem from="1600959246557" duration="7057000" />
+      <workItem from="1601028888582" duration="14267000" />
+      <workItem from="1601070862161" duration="1974000" />
+      <workItem from="1601218500131" duration="37000" />
+      <workItem from="1601218542022" duration="4422000" />
+      <workItem from="1601395019203" duration="39000" />
+      <workItem from="1601648360476" duration="4000" />
     </task>
     <servers />
   </component>
@@ -487,10 +496,11 @@
     </state>
     <state x="425" y="779" key="run.anything.popup/0.0.1080.1880@0.0.1080.1880" timestamp="1595259685947" />
     <state x="756" y="431" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1597160403935" />
-    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup" timestamp="1600801460270">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="303" y="9" width="840" height="1870" key="search.everywhere.popup" timestamp="1601227405528">
+      <screen x="0" y="0" width="1080" height="1880" />
     </state>
-    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1600801460270" />
+    <state x="303" y="9" width="840" height="1870" key="search.everywhere.popup/0.0.1080.1880@0.0.1080.1880" timestamp="1601227405528" />
+    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1600967520160" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/it_camasutra$after_deleting_length_of_messages_should_be_decrement.info" NAME="after deleting length of messages should be decrement Coverage Results" MODIFIED="1600107304970" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
